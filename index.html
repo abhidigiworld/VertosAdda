@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------------------------------------------------------------style link--------------------------------------->
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <!--================================= Favicon Icon =========================================================-->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <title>VERTOS ADDA-A STUDY PLATFORM</title>
+    <script src="https://kit.fontawesome.com/20d88f539f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="VERTOS-ADDA" class="logo1">
+        </div>
+        <nav>
+
+            <ul class="menu" id="myLinks">
+
+                <li class="navigation_btn"><a href="#"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="navigation_btn"><a href="#about"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+                <li class="navigation_btn"><a href="#services"><i class="fas fa-users-cog"></i>SERVICES</a></li>
+                <li class="navigation_btn"><a href="mailto:unbeatableeagles001@gmail.com"><i class="fas fa-envelope-open-text"></i>CONTACT</a></li>
+
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="top">
+            <div class="slider">
+                <div class="text" id="chng">
+                    <h1 class="welcome">Welcome to
+                        <span>VERTOS ADDA</span>
+                    </h1>
+                    <p>Don't panic we are here to help you.</p>
+                </div>
+                <img class="world" src="assets/images/world.png" alt="world">
+            </div>
+        </div>
+
+        <div class="videos" id="about">
+
+            <iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/TPqJQWy4Ehc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="text1">
+                <h2>YOU WANT KNOW MUCH MORE ABOUT THE VERTO ADDA</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quod voluptate consequuntur. Exercitationem, repellendus sed? Qui id minus nesciunt ducimus nemo eos vitae. Officiis maiores voluptates facilis ab nemo incidunt laudantium
+                    adipisci?
+                    <br>
+                    <a href="know.html">
+                        <button class="know">KNOW MORE</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="containercard" id="services">
+
+
+            <a href="cse1.html">
+                <div class="card">
+                    <div class="box">
+                        <div class="back">1</div>
+                        <div class="content">
+                            <p><span class="special"> 1 SEMESTER</span></p>
+                            <h2>B.TECH CSE</h2>
+                            <a href="cse1.html"><button class="card_btn">CLICK HERE</button></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="cse2.html">
+                <div class="card">
+                    <div class="box">
+                        <div class="back">2</div>
+                        <div class="content">
+                            <p><span class="special"> 2 SEMESTER</span> </p>
+                            <h2>B.TECH CSE</h2>
+                            <a href="cse2.html"><button class="card_btn">CLICK HERE</button></a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+    </main>
+    <!-- social icons div are the most -->
+    <div class="social_icon">
+        <ul class="social">
+            <a href="https://twitter.com/UnbeatableEagle" target="blank">
+                <li class="icons"><i class="fab fa-twitter"></i></li>
+            </a>
+            <a href="https://www.instagram.com/unbeatableeagles001/" target="blank">
+                <li class="icons"><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="https://t.me/+xgh4C6X2hlA5MGE9" target="blank">
+                <li class="icons"><i class="fab fa-telegram-plane"></i></li>
+            </a>
+            <a href="https://www.linkedin.com/in/unbeatable-eagles-5ab4b5226/" target="blank">
+                <li class="icons"><i class="fab fa-linkedin"></i></li>
+            </a>
+            <a href="https://github.com/UnbeatableEagles" target="blank">
+                <li class="icons"><i class="fab fa-github"></i></li>
+            </a>
+        </ul>
+    </div>
+    <div class="footer">
+        <h4>MADE WITH LOVE &#9825; OF UNBEATABLE EAGLES </h4><img src="assets/images/com.png" class="com" alt="">
+        </footer>
+        <!-- to chnage the text in the top -->
+        <script>
+            let prv = document.querySelector('h1').innerHTML;
+            chng.addEventListener('mouseover', function() {
+                document.querySelector('h1').innerHTML = "Welcome to <span>UNBEATABLE EAGLES<span>";
+            })
+            chng.addEventListener('mouseout', function() {
+                document.querySelector('h1').innerHTML = prv;
+            })
+        </script>
+
+        <!-- preloader java script code starat -->
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function() {
+                loader.style.display = "none";
+            })
+        </script>
+
+        <!-- preloader java script code end -->
+
+
+        <!-- hamburger menu -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Licorice&family=The+Nautigal&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #05423d 34%, #4c5766 65%);
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* preloader */
+
+#preloader {
+    background: #f4f6f5 url(images/load.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10010;
+}
+
+
+/* navigation start */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    background: #05423de0;
+    border-radius: 0px 0px 10px 10px;
+    z-index: 1003;
+}
+
+.logo {
+    width: 60px;
+    padding: .8em;
+    overflow: hidden;
+}
+
+nav {
+    width: 93vw;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+.navigation_btn {
+    font-size: 18px;
+    padding: 1em;
+}
+
+.fas {
+    padding-right: .5em;
+}
+
+.navigation_btn a:hover {
+    padding: 1em;
+    background: rgb(11, 53, 42);
+    border-radius: 10px;
+}
+
+
+/* MAIN CSS VANILA */
+
+main {
+    height: 100%;
+}
+
+.linkh2 {
+    padding-top: 20px;
+}
+
+.book {
+    padding-top: 3.5em;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    background: rgba(170, 190, 184, 0.664);
+    padding: 10px;
+    margin: 20px;
+    transition: .4s linear;
+}
+
+.link:hover {
+    background: #05423d;
+    color: #fff;
+}
+
+.underbox {
+    position: relative;
+    border-radius: 20px;
+    background: rgba(170, 190, 184, 0.26);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.linkimg {
+    width: 80%;
+    border-radius: 5px;
+    margin: 12px;
+    margin-bottom: 5px;
+    height: 110px;
+}
+
+p {
+    font-weight: 600;
+}
+
+.btn {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    right: 0;
+    font-size: 22px;
+    margin: 0px 20px;
+    border-radius: 8px;
+    padding: 5px 20px;
+    background: #4c5766b0;
+}
+
+.btn:hover {
+    border-radius: 20px;
+    background: #05423d;
+    border: outset;
+    border-color: #07524b;
+}
+
+.far {
+    padding-right: .5em;
+}
+
+.red {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+
+/* footert part :start */
+
+.footer {
+    background: rgb(5, 66, 61);
+    color: #fff;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.com {
+    width: 3.5em;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+/* footer part end */
